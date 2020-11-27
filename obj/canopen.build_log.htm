@@ -1,0 +1,104 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=EXJT4-FW4YK-Z9IG9-4SY06-SW4ZN-2M2A9
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.26.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.31.0
+Dialog DLL:      TARMSTM.DLL V1.66.0.0
+ 
+<h2>Project:</h2>
+F:\Desktop\Ãæ°å³¤\STM32F1_CANopen_slave_canfestival\proj\canopen.uvprojx
+Project File Date:  07/30/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'canopen'
+compiling emcy.c...
+compiling dcf.c...
+compiling lifegrd.c...
+compiling lss.c...
+..\canfestival\src\lss.c(239): warning:  #111-D: statement is unreachable
+  	break;
+..\canfestival\src\lss.c(689): warning:  #185-D: dynamic initialization in unreachable code
+  	MSG_WAR(0x000, "msg_cs is:", msg_cs);
+..\canfestival\src\lss.c(712): warning:  #185-D: dynamic initialization in unreachable code
+  	MSG_WAR(0x000, "msg_cs is:", msg_cs);
+..\canfestival\src\lss.c(751): warning:  #185-D: dynamic initialization in unreachable code
+  	MSG_WAR(0x000, "msg_cs is:", msg_cs);
+..\canfestival\src\lss.c(770): warning:  #185-D: dynamic initialization in unreachable code
+  	MSG_WAR(0x000, "msg_cs is:", msg_cs);
+..\canfestival\src\lss.c(846): warning:  #223-D: function "malloc" declared implicitly
+  		 ptrTable = (indextable *)malloc(sizeof(indextable));
+..\canfestival\src\lss.c(876): warning:  #223-D: function "free" declared implicitly
+  		free(ptrTable->pSubindex);
+..\canfestival\src\lss.c(841): warning:  #550-D: variable "vendorId"  was set but never used
+  		uint32_t *vendorId = NULL;
+..\canfestival\src\lss.c(845): warning:  #177-D: variable "temp"  was declared but never referenced
+  		subindex  temp;
+..\canfestival\src\lss.c: 9 warnings, 0 errors
+compiling usart1.c...
+compiling nmtMaster.c...
+compiling direct_can.c...
+compiling nmtSlave.c...
+..\canfestival\src\nmtSlave.c(169): warning:  #940-D: missing return statement at end of non-void function "slaveSendBootUp" 
+  }
+..\canfestival\src\nmtSlave.c(134): warning:  #177-D: variable "j"  was declared but never referenced
+  	int j = 0;	
+..\canfestival\src\nmtSlave.c: 2 warnings, 0 errors
+compiling MAIN.C...
+compiling objacces.c...
+compiling pdo.c...
+compiling sync.c...
+compiling states.c...
+compiling timer_canfestival.c...
+compiling Slave.c...
+compiling TestSlave.c...
+compiling STM32_timer_canfestival.c...
+compiling sdo.c...
+compiling Slave_board.c...
+..\can-slave\Slave_board.c(114): warning:  #223-D: function "CAN_Mode_Init" declared implicitly
+  	CAN_Mode_Init(CAN_SJW_1tq,CAN_BS2_8tq,CAN_BS1_9tq,4,CAN_Mode_Normal);
+..\can-slave\Slave_board.c(132): warning:  #223-D: function "malloc" declared implicitly
+  	ptx_msg = (CanTxMsg *)malloc(sizeof(CanTxMsg));//zxb add this
+..\can-slave\Slave_board.c(161): warning:  #223-D: function "free" declared implicitly
+           free(ptx_msg);
+..\can-slave\Slave_board.c(167): warning:  #223-D: function "free" declared implicitly
+           free(ptx_msg);
+..\can-slave\Slave_board.c(304): warning:  #177-D: function "StartTimerLoop"  was declared but never referenced
+  static StartTimerLoop(TimerCallback_t _init_callback) 
+..\can-slave\Slave_board.c: 5 warnings, 0 errors
+linking...
+Program Size: Code=68268 RO-data=2732 RW-data=2640 ZI-data=2344  
+FromELF: creating hex file...
+"..\obj\canopen.axf" - 0 Error(s), 16 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_canopen
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:07
+</pre>
+</body>
+</html>
